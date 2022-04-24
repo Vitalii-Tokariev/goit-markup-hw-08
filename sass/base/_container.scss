@@ -1,6 +1,28 @@
-.container {
+/*.container {
   width: 1200px;
   padding: 0 15px;
   border: 1px solid none;
   margin: 0 auto;
+}*/
+.container {
+  padding: 0 15px;
+}
+// 480px+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+//768px+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+//1200px+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
