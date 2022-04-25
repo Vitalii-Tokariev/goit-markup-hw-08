@@ -1,5 +1,5 @@
-//0px-767px
-@media screen and (max-width: 767px) {
+//0px-767px-768px+
+@media screen and (max-width: 767px), (min-width: 768px) {
   .hero {
     padding: 118px 0;
     background-color: var(--background-color-hero);
@@ -11,23 +11,24 @@
       ),
       url(../images/team-foto.jpg);
     background-size: cover;
-  }
-  @media (min-device-pixel-ratio: 1),
-    (-webkit-min-device-pixel-ratio: 1),
-    (min-resolution: 96dpi),
-    (min-resolution: 1dppx) {
-    .hero {
-      background-image: url(../images/team-foto@1x.jpg);
+    @media (min-device-pixel-ratio: 1),
+      (-webkit-min-device-pixel-ratio: 1),
+      (min-resolution: 96dpi),
+      (min-resolution: 1dppx) {
+      & {
+        background-image: url(../images/team-foto@1x.jpg);
+      }
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/team-foto@2x.jpg);
+      }
     }
   }
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: url(../images/team-foto@2x.jpg);
-    }
-  }
+
   .hero-title {
     font-size: 26px;
     line-height: calc(42 / 26);
@@ -62,18 +63,6 @@
 
 //768px
 @media screen and (min-width: 768px) {
-  .hero {
-    padding: 118px 0;
-    background-color: var(--background-color-hero);
-    text-align: center;
-    margin: 0 auto;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/team-foto.jpg);
-    background-size: cover;
-  }
   @media (min-device-pixel-ratio: 1),
     (-webkit-min-device-pixel-ratio: 1),
     (min-resolution: 96dpi),
@@ -90,41 +79,32 @@
       background-image: url(../images/team-foto-tablet@2x.jpg);
     }
   }
-  .hero-title {
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    max-width: 650px;
-    margin: 0 auto;
-    color: var(--white-color);
-    margin-bottom: 30px;
-  }
-
-  .hero__btn {
-    padding: 10px 32px;
-    background-color: var(--blue-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    letter-spacing: 0.06em;
-    color: var(--white-color);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0ms;
-    &:hover,
-    &:focus {
-      background-color: var(--hero-btn-color);
-    }
-  }
 }
 //1200px
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
+    max-width: 1600px;
+  }
+  @media (min-device-pixel-ratio: 1),
+    (-webkit-min-device-pixel-ratio: 1),
+    (min-resolution: 96dpi),
+    (min-resolution: 1dppx) {
+    .hero {
+      background-image: url(../images/team-foto-deskt@1x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/team-foto-desk@2x.jpg);
+    }
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    max-width: 700px;
   }
 }
