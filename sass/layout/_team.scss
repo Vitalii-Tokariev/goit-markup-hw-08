@@ -1,4 +1,108 @@
-.our-team {
+//0px-767px
+@media screen and (max-width: 767px), (min-width: 768px) {
+  .about {
+    padding: 60px 0px 60px 0px;
+  }
+  .our-team {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 30px;
+  }
+  .manager-img {
+    width: 450px;
+  }
+
+  .our-team-surname {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+
+  .our-team-professions {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+  }
+
+  .about-manager {
+    background-color: var(--white-color);
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  .about-manager-prof {
+    height: 168px;
+    width: 450px;
+    padding: 30px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .team-list {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+  }
+  .social-list_team {
+    display: flex;
+    margin-right: -10px;
+    justify-content: center;
+  }
+}
+//768px+
+@media screen and (min-width: 768px) {
+  .manager-img {
+    width: 354px;
+  }
+  .about-manager-prof {
+    width: 354px;
+  }
+  .about-manager {
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+}
+//1200px+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 94px 0px 94px 0px;
+  }
+  .our-team {
+    margin-bottom: 50px;
+  }
+  .manager-img {
+    width: 270px;
+  }
+  .about-manager-prof {
+    width: 270px;
+  }
+  .about-manager {
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .about-manager {
+    margin-bottom: 0px;
+  }
+}
+/*.our-team {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -44,4 +148,4 @@
   display: flex;
   margin-right: -15px;
   margin-left: -15px;
-}
+}*/
