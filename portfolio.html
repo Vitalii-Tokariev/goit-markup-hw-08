@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="container header_container">
         <nav class="nav-page">
           <a href="./index.html" class="logo"
             >Web<span class="logo_color_black">Studio</span></a
@@ -36,28 +36,81 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-btn__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu_btn"></use>
+          </svg>
+        </button>
         <ul class="contacts">
           <li class="contacts-item">
             <a href="mailto:info@devstudio.com" class="contacts-link">
               <svg width="16" height="12" class="icon">
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
-              <div class="mail-text">info@devstudio.com</div></a
-            >
+              info@devstudio.com
+            </a>
           </li>
           <li class="contacts-item">
             <a href="tel:+380961111111" class="contacts-link"
               ><svg width="10" height="16" class="icon">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
-              <div class="phone-text">+38 096 111 11 11</div>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu_close-btn" data-menu-close>
+            <svg class="mobile-menu_close-icon" width="19" height="19">
+              <use href="./images/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu_list">
+            <li class="mobile-menu_item">
+              <a href="./index.html" class="mobile-menu_link">Студия</a>
+            </li>
+            <li class="mobile-menu_item">
+              <a href="./portfolio.html" class="mobile-menu_link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu_item mobile-menu_contact">
+              <a href="#" class="mobile-menu_link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu_contacts">
+            <li class="mobile-menu_contacts-item">
+              <a href="tel:+380961111111" class="mobile-menu_phone-link">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobile-menu_contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu_mail-link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu_social-list">
+            <li class="mobile-menu_social-list_item">
+              <a class="mobile-menu_social-list_link" href=""> Instagram </a>
+            </li>
+            <li class="mobile-menu_social-list_item">
+              <a class="mobile-menu_social-list_link" href=""> Twitter </a>
+            </li>
+            <li class="mobile-menu_social-list_item">
+              <a class="mobile-menu_social-list_link" href="">Facebook </a>
+            </li>
+            <li class="mobile-menu_social-list_item">
+              <a class="mobile-menu_social-list_link" href="">Linkedin </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="section">
+      <!--<section class="section">
         <h1 hidden>Портфолио</h1>
         <div class="container">
           <ul class="button-portfolio-list">
@@ -254,9 +307,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
     </main>
-    <footer class="section footer">
+    <!--<footer class="section footer">
       <div class="container footer-hub">
         <div class="footer-block">
           <a href="./index.html" class="logo-footer"
@@ -336,6 +389,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer>-->
+    <script src="menu.js"></script>
   </body>
 </html>

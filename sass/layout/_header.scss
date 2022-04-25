@@ -29,12 +29,14 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.mobile-menu_list {
+  margin-bottom: 300px;
+}
 .mobile-menu_item {
   margin-bottom: 32px;
-  & + .mobile-menu_contact {
-    margin-bottom: 300px;
-  }
+}
+.mobile-menu_contact {
+  margin-bottom: 0px;
 }
 .mobile-menu__container {
   position: relative;
@@ -181,7 +183,7 @@
     color: var(--secondary-color);
     align-items: center;
     font-weight: 500;
-    padding: 5px 0;
+    margin: 5px 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
