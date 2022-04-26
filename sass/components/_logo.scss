@@ -12,7 +12,7 @@
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 24px;
-  /*margin-right: 115px;*/
+  margin-right: 100px;
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: var(--blue-color);
@@ -27,7 +27,7 @@
 // 480px+
 @media screen and (min-width: 480px) {
   .logo {
-    margin-right: 246px;
+    margin-right: 276px;
   }
 }
 

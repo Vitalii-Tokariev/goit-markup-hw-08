@@ -46,11 +46,7 @@
   }
 
   .footer-block {
-    display: inline-block;
-    margin: 0px;
-    margin-right: 0px;
-    margin-left: 115px;
-    margin-right: 115px;
+    display: block;
     text-align: center;
   }
 
@@ -164,9 +160,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .footer-block {
-    margin-left: 76px;
-  }
+
   .footer-box {
     margin-right: 90px;
     margin-top: 0px;
