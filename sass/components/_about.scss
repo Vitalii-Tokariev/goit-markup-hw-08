@@ -7,20 +7,13 @@
     padding: 60px 0 60px 0;
   }
   .advantages-list {
-    display: flex;
-    margin-right: -15px;
-    margin-left: -15px;
+    display: block;
+    margin: -15px;
     flex-wrap: wrap;
   }
 
   .advantages-list__item {
     margin: 15px;
-    &:first-child {
-      margin-top: 0px;
-    }
-    &:last-child {
-      margin-bottom: 0px;
-    }
   }
 
   .icon-wrapper {
@@ -42,6 +35,7 @@
     text-transform: uppercase;
     color: var(--main-color);
     margin-bottom: 10px;
+    text-align: center;
   }
 
   .advantages-item-benefits-legend {
@@ -55,13 +49,14 @@
 
 //768px+
 @media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+  }
+  .advantages-item-benefits {
+    text-align: left;
+  }
   .advantages-list__item {
     max-width: 354px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
-    }
   }
 }
 //1200px+
@@ -72,8 +67,6 @@
 
   .advantages-list__item {
     max-width: 270px;
-    margin-top: 0px;
-    margin-bottom: 0px;
   }
   .our-skills {
     font-size: 36px;
