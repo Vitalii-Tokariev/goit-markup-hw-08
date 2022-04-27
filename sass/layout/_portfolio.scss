@@ -23,7 +23,7 @@
       border-radius: 4px;
     }
     margin-bottom: 15px;
-    &:nth-last-child(-n + 2) {
+    &:nth-last-child(-n + 0) {
       margin-bottom: 0px;
     }
   }
@@ -159,6 +159,9 @@
   }
   .portfolio-img {
     width: 354px;
+  }
+  .button-portfolio-item {
+    margin-bottom: 0;
   }
 }
 
