@@ -16,6 +16,9 @@
   }
   .contacts-link-footer {
     margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: -8px;
+    }
   }
   .contacts-link-footer-text {
     font-weight: normal;

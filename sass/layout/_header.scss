@@ -9,8 +9,23 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 //0px-767px
 @media screen and (max-width: 767px) {
+  .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 15px;
+  }
+  .mobile-menu_list {
+    flex-grow: 1;
+    margin-bottom: 1px;
+  }
   .nav-list__link {
     display: none;
   }
@@ -37,28 +52,19 @@
   }*/
   .mobile-menu_item {
     margin-bottom: 32px;
-    &:last-child {
-      margin-bottom: 0px;
-    }
   }
   .mobile-menu_contacts {
     display: block;
     bottom: 134px;
-    position: absolute;
   }
+
   .mobile-menu_contacts-item {
     margin-bottom: 32px;
     &:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 64px;
     }
   }
-  .mobile-menu__container {
-    height: 100vh;
-    position: relative;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 15px;
-  }
+
   .mobile-menu-btn {
     background-color: transparent;
 
@@ -138,7 +144,6 @@
   .mobile-menu_social-list {
     display: flex;
     bottom: 48px;
-    position: absolute;
     flex-wrap: wrap;
     margin-left: -10px;
   }
@@ -204,7 +209,7 @@
     background-color: var(--blue-color);
     border-radius: 2px;
     left: 0;
-    bottom: -1px;
+    bottom: -3px;
   }
   .current {
     color: var(--blue-color);
@@ -220,7 +225,6 @@
     color: var(--secondary-color);
     align-items: center;
     font-weight: 500;
-    padding: 5px 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -234,6 +238,22 @@
     &:focus {
       color: var(--blue-color);
       fill: var(--blue-color);
+    }
+  }
+  .contacts-link_header-mail {
+    padding-top: 20px;
+  }
+  .contacts-link_header-phone {
+    padding-bottom: 20px;
+  }
+  .contacts-item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    &:first-child {
+      margin-top: 0px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
     }
   }
 
@@ -265,5 +285,23 @@
 
   .contacts-link {
     display: flex;
+  }
+  .contacts-link_header-mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts-link_header-phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    &:first-child {
+      margin-top: 0px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 }

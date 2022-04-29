@@ -1049,6 +1049,20 @@ ol {
 }
 
 @media screen and (max-width: 767px) {
+  .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 15px;
+  }
+  .mobile-menu_list {
+    flex-grow: 1;
+    margin-bottom: 1px;
+  }
   .nav-list__link {
     display: none;
   }
@@ -1075,26 +1089,15 @@ ol {
   .mobile-menu_item {
     margin-bottom: 32px;
   }
-  .mobile-menu_item:last-child {
-    margin-bottom: 0px;
-  }
   .mobile-menu_contacts {
     display: block;
     bottom: 134px;
-    position: absolute;
   }
   .mobile-menu_contacts-item {
     margin-bottom: 32px;
   }
   .mobile-menu_contacts-item:last-child {
-    margin-bottom: 0px;
-  }
-  .mobile-menu__container {
-    height: 100vh;
-    position: relative;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 15px;
+    margin-bottom: 64px;
   }
   .mobile-menu-btn {
     background-color: transparent;
@@ -1171,7 +1174,6 @@ ol {
   .mobile-menu_social-list {
     display: flex;
     bottom: 48px;
-    position: absolute;
     flex-wrap: wrap;
     margin-left: -10px;
   }
@@ -1235,7 +1237,7 @@ ol {
     background-color: var(--blue-color);
     border-radius: 2px;
     left: 0;
-    bottom: -1px;
+    bottom: -3px;
   }
   .current {
     color: var(--blue-color);
@@ -1251,7 +1253,6 @@ ol {
     color: var(--secondary-color);
     align-items: center;
     font-weight: 500;
-    padding: 5px 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1265,6 +1266,22 @@ ol {
   .contacts-link:hover, .contacts-link:focus {
     color: var(--blue-color);
     fill: var(--blue-color);
+  }
+  .contacts-link_header-mail {
+    padding-top: 20px;
+  }
+  .contacts-link_header-phone {
+    padding-bottom: 20px;
+  }
+  .contacts-item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .contacts-item:first-child {
+    margin-top: 0px;
+  }
+  .contacts-item:last-child {
+    margin-bottom: 0px;
   }
   .icon {
     margin-right: 10px;
@@ -1291,6 +1308,24 @@ ol {
   }
   .contacts-link {
     display: flex;
+  }
+  .contacts-link_header-mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts-link_header-phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .contacts-item:first-child {
+    margin-top: 0px;
+  }
+  .contacts-item:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -1319,7 +1354,7 @@ ol {
 
 @media screen and (max-width: 479px), (min-width: 480px) {
   .hero-title {
-    font-size: 22px;
+    font-size: 21px;
     line-height: calc(42 / 22);
     text-align: center;
     letter-spacing: 0.06em;
@@ -1428,12 +1463,7 @@ ol {
   }
   .about-manager {
     background-color: var(--white-color);
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 30px;
-  }
-  .about-manager:last-child {
-    margin-bottom: 0px;
+    margin: 15px;
   }
   .about-manager-prof {
     height: 168px;
@@ -1443,9 +1473,8 @@ ol {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   }
   .team-list {
-    display: block;
-    margin-right: -15px;
-    margin-left: -15px;
+    display: flex;
+    margin: -15px;
     flex-wrap: wrap;
   }
   .social-list_team {
@@ -1465,9 +1494,6 @@ ol {
   .about-manager-prof {
     width: 354px;
   }
-  .about-manager:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1482,12 +1508,6 @@ ol {
   }
   .about-manager-prof {
     width: 270px;
-  }
-  .about-manager:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
-  }
-  .about-manager {
-    margin-bottom: 0px;
   }
 }
 
@@ -1599,14 +1619,17 @@ ol {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    margin-top: -30px;
+    margin-top: -15px;
+    margin-bottom: -15px;
   }
   .img-portfolio-item {
+    display: flex;
     width: 450px;
     border: 1px solid #eeeeee;
     margin-right: 15px;
     margin-left: 15px;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1862,6 +1885,9 @@ ol {
   }
   .contacts-link-footer {
     margin-bottom: 8px;
+  }
+  .contacts-link-footer:last-child {
+    margin-bottom: -8px;
   }
   .contacts-link-footer-text {
     font-weight: normal;
