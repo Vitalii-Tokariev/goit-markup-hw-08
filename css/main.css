@@ -1274,11 +1274,7 @@ ol {
     padding-bottom: 20px;
   }
   .contacts-item {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .contacts-item:first-child {
-    margin-top: 0px;
+    margin-bottom: 10px;
   }
   .contacts-item:last-child {
     margin-bottom: 0px;
@@ -1654,7 +1650,8 @@ ol {
     overflow: scroll;
   }
   .img-portfolio-item-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .img-portfolio-item-link:hover, .img-portfolio-item-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1678,6 +1675,7 @@ ol {
   .box-projects {
     padding: 20px 24px;
     background: var(--white-color);
+    flex-grow: 1;
   }
   .our-projects {
     font-weight: bold;
@@ -1886,16 +1884,12 @@ ol {
   .contacts-link-footer {
     margin-bottom: 8px;
   }
-  .contacts-link-footer:last-child {
-    margin-bottom: -8px;
-  }
   .contacts-link-footer-text {
     font-weight: normal;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-top: 8px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2020,14 +2014,14 @@ ol {
   .footer-hub {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .footer-box {
-    margin-right: 90px;
+    margin-right: 0px;
     margin-top: 0px;
   }
   .footer-block {
     margin-left: 76px;
+    margin-right: 165px;
   }
   .contact-form-input-footer {
     width: 450px;
@@ -2053,8 +2047,15 @@ ol {
   .map-address {
     text-align: left;
   }
-  .contacts-link-footer {
+  .contacts-item-footer {
     margin-top: 9px;
+    margin-bottom: -9px;
+  }
+  .contacts-link-footer {
+    margin-bottom: 9px;
+  }
+  .footer-box {
+    margin-right: 90px;
   }
   .footer-block {
     text-align: left;
@@ -2072,7 +2073,7 @@ ol {
   .contact-form-input-footer {
     margin-left: 0px;
     margin-right: 12px;
-    width: 360px;
+    width: 358px;
   }
   .contact-form-mailing {
     text-align: left;

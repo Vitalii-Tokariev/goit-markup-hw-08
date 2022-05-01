@@ -16,9 +16,6 @@
   }
   .contacts-link-footer {
     margin-bottom: 8px;
-    &:last-child {
-      margin-bottom: -8px;
-    }
   }
   .contacts-link-footer-text {
     font-weight: normal;
@@ -26,7 +23,6 @@
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-top: 8px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -164,15 +160,15 @@
   .footer-hub {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .footer-box {
-    margin-right: 90px;
+    margin-right: 0px;
     margin-top: 0px;
   }
   .footer-block {
     margin-left: 76px;
+    margin-right: 165px;
   }
   .contact-form-input-footer {
     width: 450px;
@@ -199,8 +195,15 @@
   .map-address {
     text-align: left;
   }
-  .contacts-link-footer {
+  .contacts-item-footer {
     margin-top: 9px;
+    margin-bottom: -9px;
+  }
+  .contacts-link-footer {
+    margin-bottom: 9px;
+  }
+  .footer-box {
+    margin-right: 90px;
   }
 
   .footer-block {
@@ -222,7 +225,7 @@
   .contact-form-input-footer {
     margin-left: 0px;
     margin-right: 12px;
-    width: 360px;
+    width: 358px;
   }
   .contact-form-mailing {
     text-align: left;
